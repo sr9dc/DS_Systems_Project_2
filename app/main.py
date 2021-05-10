@@ -1,7 +1,7 @@
 import pandas as pd
 import requests
 
-import schedule
+from schedule import every, repeat, run_pending
 import time
 
 
@@ -10,6 +10,7 @@ times_max = 60
 
 id = 0
 
+@repeat(every().minute.at(":10"))
 def pull():
     r = requests.get('https://4feaquhyai.execute-api.us-east-1.amazonaws.com/api/pi')
     
@@ -17,8 +18,20 @@ def pull():
 
     id+=1
     
-    factor = r.json(['factor'])
+    factor = r.json()['factor']
+    pi = r.json()['pi']
+    time = r.json()['time']
     
-    d = {'ID' : [id], 'factor': [1, 2], 'col2': [3, 4]}
+    d = {'ID' : [id], 'factor': [factor], 'pi' : [pi], 'time': [time]}
     
+    df = pd.DataFrame(data=d, index=[id])
+    
+    print(df)
+    
+    return 0
+
+
+while True:
+    run_pending()
+    time.sleep(1)
     
