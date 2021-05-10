@@ -22,7 +22,7 @@
 
 * On the code end, the basic script can be run using Python and the AWS Command Line Interface (CLI) to connect to the database using an access key and it's corresponding secret access key.
 
-* DynamoDB was the primary tool used as a way to write the values retrieved from the API to the NoSQL database. 
+* DynamoDB was the primary tool used as a way to write the values retrieved from the API to the NoSQL database. [Here](https://rawcdn.githack.com/sr9dc/DS_Systems_Project_2/3e000fffba7b3cfb2ce9ed6eb9c8fe1edfad9226/app/Console.html) is the data from my run. 
 
 * The database values were then scraped using the `boto3` package in python, and an analysis was conducted using a [Jupyter Notebook](https://github.com/sr9dc/DS_Systems_Project_2/blob/master/app/analysis.ipynb) to observe any changes. 
 
