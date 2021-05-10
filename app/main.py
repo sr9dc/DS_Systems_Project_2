@@ -14,7 +14,7 @@ times_max = 60
 
 id = 0
 
-
+@repeat(every().minute.at(":10"))
 def pull():
     r = requests.get('https://4feaquhyai.execute-api.us-east-1.amazonaws.com/api/pi')
     
@@ -34,10 +34,12 @@ def pull():
     
     put_df(df, table="DS3002_Project2")
     
+    times_pulled+=1
+    
     return 0
 
 
-# while True:
-pull()
-    # time.sleep(1)
+while times_pulled < times_max:
+    run_pending()
+
     
