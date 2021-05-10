@@ -89,6 +89,8 @@ Here is the database at **5** minutes.
 
 As you can see, the values are being inputted correctly. The [python script](https://github.com/sr9dc/DS_Systems_Project_2/blob/master/app/main.py) ensures that the code execution halts at the **60** minute mark. 
 
+The actual data outputted from the database is in the [.csv file](https://github.com/sr9dc/DS_Systems_Project_2/blob/master/app/DS3002_Project2.csv) in the repository. Also attached is the [console html file](https://github.com/sr9dc/DS_Systems_Project_2/blob/master/app/Console.html), which can be viewed to compare your run. 
+
 <!-- Analysis -->
 ## Analysis
 
