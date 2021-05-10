@@ -159,6 +159,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Sai Rajuladevi: https://www.linkedin.com/in/sai-rajuladevi/
 
-Github Project Link: [https://github.com/sr9dc/DS_Systems_Project_1](https://github.com/sr9dc/DS_Systems_Project_2)
+Github Project Link: [https://github.com/sr9dc/DS_Systems_Project_2](https://github.com/sr9dc/DS_Systems_Project_2)
 
 Dockerized Project Link: [https://hub.docker.com/r/sairajulad/data-ingestion-analysis-project](https://hub.docker.com/r/sairajulad/data-ingestion-analysis-project)
